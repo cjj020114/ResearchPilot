@@ -1,0 +1,2 @@
+{"question":"ResearchPilot 如何降低普通 RAG Demo 的同质化风险？","relevant_chunk_ids":["replace-with-real-chunk-id"],"answer":"通过评测、检索优化、引用溯源和工程化链路展示真实 RAG 能力。"}
+{"question":"为什么科研 RAG 需要保留页码和章节 metadata？","relevant_chunk_ids":["replace-with-real-chunk-id"],"answer":"页码和章节用于引用溯源、过滤检索和人工核验。"}

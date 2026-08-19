@@ -1,0 +1,16 @@
+{"question": "Naive RAG 的标准三步流程是什么？", "relevant_chunk_ids": ["1b33428c-42ba-4a6c-bcf7-aaf9e9fa6d40"], "answer": "Indexing、Retrieval 与 Generation。", "anchor": "ANCHOR_FACT_RAG_NAIVE"}
+{"question": "Modular RAG 相对 Naive RAG 常见有哪些增强？", "relevant_chunk_ids": ["33301cfe-0128-4246-bc73-f4077ec7d7ef"], "answer": "查询改写、混合检索、重排序与策略路由等。", "anchor": "ANCHOR_FACT_RAG_MODULAR"}
+{"question": "BM25 相对稠密检索的主要优势和弱点是什么？", "relevant_chunk_ids": ["a1a091c0-8fdc-4c7e-8f4b-1e4d058b04a0"], "answer": "擅长精确词项匹配，但对同义改写的语义召回较弱。", "anchor": "ANCHOR_FACT_BM25"}
+{"question": "混合检索通常如何融合 BM25 与稠密结果？", "relevant_chunk_ids": ["5c09a78f-7c72-4721-9528-aba072b185ef"], "answer": "并行检索后用加权融合或 RRF 合并，必要时再 Cross-Encoder 重排。", "anchor": "ANCHOR_FACT_HYBRID_RRF"}
+{"question": "查询扩展有哪些常见手段？", "relevant_chunk_ids": ["ac4cf5c4-c24f-4b59-b589-2d48dab74b9f"], "answer": "改写、子查询拆分与 step-back 等。", "anchor": "ANCHOR_FACT_QUERY_EXPAND"}
+{"question": "低置信检索时可以采取什么策略？", "relevant_chunk_ids": ["b408793c-5463-4f48-81e0-85d452127d86"], "answer": "扩大候选池做二次检索。", "anchor": "ANCHOR_FACT_RETRY_SEARCH"}
+{"question": "Hit@k 和 MRR 分别衡量什么？", "relevant_chunk_ids": ["fc568426-55f5-4472-bcc3-9a5794a4b4e4"], "answer": "Hit@k 看 Top-k 是否命中任一相关；MRR 看第一条相关结果的排名倒数。", "anchor": "ANCHOR_FACT_HIT_MRR"}
+{"question": "Faithfulness 与 Answer Relevance 的区别是什么？", "relevant_chunk_ids": ["4d7ca745-f8a9-4e1f-8a6a-0052b48b6d1a"], "answer": "Faithfulness 看答案是否被上下文支持；Answer Relevance 看答案是否切题。", "anchor": "ANCHOR_FACT_RAGAS_PAIR"}
+{"question": "sEMG 在假肢控制中扮演什么角色？", "relevant_chunk_ids": ["09a64a58-8216-472c-bf12-32d5f477f0f8"], "answer": "通过皮肤电极记录肌肉电活动，是肌电假肢常用的非侵入式控制信号。", "anchor": "ANCHOR_FACT_SEMG"}
+{"question": "为什么经肱截肢场景下纯 sEMG 控制更困难？", "relevant_chunk_ids": ["6150e876-9cc4-4e2f-81e0-81b3210b7a50"], "answer": "残肢可用肌电通道不足，可区分动作类数受限。", "anchor": "ANCHOR_FACT_EMG_LIMIT"}
+{"question": "fNIRS 相对 EEG 在时间分辨率上有何特点？", "relevant_chunk_ids": ["5ff34fdf-ab4e-4fba-b623-752bd5c3ea29", "1ae854ee-6d34-4372-816e-a3a86be52280"], "answer": "fNIRS 反映血流动力学，时间分辨率通常慢于 EEG。", "anchor": "ANCHOR_FACT_FNIRS"}
+{"question": "假肢接口里 fNIRS 一般怎么用？", "relevant_chunk_ids": ["1ae854ee-6d34-4372-816e-a3a86be52280"], "answer": "可用于皮层意图或肌肉血氧特征，常与 EMG 互补。", "anchor": "ANCHOR_FACT_FNIRS_USE"}
+{"question": "为什么要把 EMG 与 NIRS 融合用于假肢控制？", "relevant_chunk_ids": ["ef7a017a-b5a8-4e23-9e11-858e643013ee"], "answer": "弥补残肢肌电信号源不足并提升分类与控制表现。", "anchor": "ANCHOR_FACT_HYBRID_MOTIVE"}
+{"question": "公开实验对 hybrid EMG–NIRS 的总体结论是什么？", "relevant_chunk_ids": ["d93efb20-7605-4fd2-bc4f-b83eb40bcbf6"], "answer": "相对单模态可提升分类准确率与在线控制表现。", "anchor": "ANCHOR_FACT_HYBRID_RESULT"}
+{"question": "个人科研助手常见的多模态 RAG 路径是什么？", "relevant_chunk_ids": ["35162a2d-35f6-4278-8124-cce092e817b8"], "answer": "先用 VLM 转文本，再做标准文本 RAG。", "anchor": "ANCHOR_FACT_VLM_TEXT_RAG"}
+{"question": "文档路由通常如何按模态分流？", "relevant_chunk_ids": ["a396dbac-ada6-478b-a185-947b451cef39"], "answer": "按 image / table / document 分流；json/yaml/xml 不宜当阅读型知识入库。", "anchor": "ANCHOR_FACT_DOC_ROUTE"}
